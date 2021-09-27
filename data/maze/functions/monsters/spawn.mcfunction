@@ -6,16 +6,16 @@ summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.mo
 #summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.11}]}
 #summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.11}]}
 #scale set pehkui:base 2 @e[type=undergarden:nargoyle,tag=mazeMob]
-data merge entity @e[limit=1,type=undergarden:muncher] {Attributes:[{Name:generic.follow_range,Base:4}]}
 
 summon undergarden:rotwalker ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.3}]}
 #summon undergarden:rotwalker ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.3}]}
+scale set pehkui:base 1.5 @e[type=undergarden:rotwalker,tag=mazeMob]
 
 summon undergarden:rotbeast ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Base: 0.2d, Name: "minecraft:generic.movement_speed"}]}
 
 summon undergarden:forgotten_guardian ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0}]}
 
-#summon undergarden:muncher ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.follow_range,Base:4}]}
+summon undergarden:muncher ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.follow_range,Base:3}]}
 
 summon undergarden:scintling ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Base: 0.05d, Name: "minecraft:generic.movement_speed"}]}
 
