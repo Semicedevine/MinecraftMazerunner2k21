@@ -1,2 +1,0 @@
-kill @e[type=armor_stand,tag=lobby]
-summon armor_stand ~ ~ ~ {CustomName:'{"text":"Come near me to enter Hell","color":"red","bold":true}',HasVisualFire:1b,CustomNameVisible:true,Tags:["lobby"],NoGravity:1,Invulnerable:1,PersistenceRequired:1,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:0}}}]}

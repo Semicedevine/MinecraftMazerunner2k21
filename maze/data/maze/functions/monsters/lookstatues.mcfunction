@@ -1,6 +1,0 @@
-execute if score @s look matches ..10 as @e[dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0,tag=statue] unless score @s maze matches 1.. run playsound weeping_angels:angel_seen player @a[distance=..6] ~ ~ ~ 0.1 1
-execute if score @s look matches ..10 as @e[dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0,tag=statue] run scoreboard players set @s maze 1000
-execute if score @s look matches ..10 if predicate maze:badomen as @e[dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0,tag=statue] if score @s look matches 0 run playsound weeping_angels:angel_seen player @a[distance=..6] ~ ~ ~ 0.3 0.9
-execute if score @s look matches ..10 if predicate maze:badomen as @e[dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0,tag=statue] run scoreboard players set @s look 2
-execute if score @s look matches ..10 if predicate maze:sprinting as @e[dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0,tag=statue] if score @s look matches 0 run playsound weeping_angels:angel_seen player @a[distance=..6] ~ ~ ~ 0.3 0.9
-execute if score @s look matches ..10 if predicate maze:sprinting as @e[dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0,tag=statue] run scoreboard players set @s look 2
