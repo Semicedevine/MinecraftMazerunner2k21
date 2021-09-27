@@ -1,0 +1,1 @@
+execute as @e[type=item,tag=mazeItem] run function maze:maze/spread/spreadout

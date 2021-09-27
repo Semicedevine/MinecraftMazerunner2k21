@@ -1,0 +1,1 @@
+execute at @e[type=armor_stand,tag=lobby,limit=1] run tp @a ~ ~ ~2

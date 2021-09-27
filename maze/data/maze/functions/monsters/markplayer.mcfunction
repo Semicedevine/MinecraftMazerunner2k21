@@ -1,0 +1,1 @@
+effect give @s bad_omen 8 1

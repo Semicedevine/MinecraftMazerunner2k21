@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "stepping_on": {
+        "biome": "minecraft:badlands",
+        "dimension": "minecraft:the_end"
+      },
+      "flags": {
+        "is_sneaking": true
+      }
+    }
+  }
+  

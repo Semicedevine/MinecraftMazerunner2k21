@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "flags": {},
+      "targeted_entity": {
+        "type": "minecraft:player",
+        "effects": {
+          "minecraft:bad_omen": {}
+        }
+      }
+    }
+  }
