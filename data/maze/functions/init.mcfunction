@@ -20,7 +20,16 @@ scoreboard objectives add look2 dummy
 scoreboard objectives add lives dummy
 scoreboard objectives add light dummy
 scoreboard objectives add light2 dummy
+scoreboard objectives add music dummy
 scoreboard objectives add dead deathCount
+scoreboard objectives add saturation food
+scoreboard objectives add lastSaturation dummy
+
+scoreboard objectives add spectate trigger
+scoreboard objectives add free trigger
+
+#gamerules
+gamerule doImmediateRespawn true
 
 #rng
 scoreboard objectives add math dummy

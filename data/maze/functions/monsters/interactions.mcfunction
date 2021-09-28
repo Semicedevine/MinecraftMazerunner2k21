@@ -16,15 +16,17 @@ execute as @e[type=undergarden:nargoyle,tag=mazeMob] if predicate maze:playerspr
 execute as @e[type=undergarden:nargoyle,tag=mazeMob] at @s if score @s maze >= 20 const run playsound undergarden:entity.nargoyle_attack ambient @a ~ ~ ~ 0.5 1
 execute as @e[type=undergarden:nargoyle,tag=mazeMob] if score @s maze >= 20 const run scoreboard players set @s maze 0
 
+execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playernotsprinting run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:20}]}
+execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playerbadomen run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:20}]}
 execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:12}]}
-execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:0}]}
+execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:4}]}
 
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playernotsprinting run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:6}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playernotsprinting run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:10}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:4}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] if predicate maze:player run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:10}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] if predicate maze:player run scoreboard players add @s maze 1
-execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:player run scoreboard players set @s maze 0
+#execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:player run scoreboard players set @s maze 0
 execute as @e[type=undergarden:rotbeast,tag=mazeMob,scores={maze=1}] at @s run playsound undergarden:entity.rotbeast_living ambient @a ~ ~ ~ 1 1.8
 execute as @e[type=undergarden:rotbeast,tag=mazeMob,scores={maze=60}] at @s run playsound undergarden:entity.rotbeast_death ambient @a ~ ~ ~ 2 0.6
 execute as @e[type=undergarden:rotbeast,tag=mazeMob,scores={maze=..59}] run data merge entity @s {Attributes:[{Name:generic.movement_speed,Base:0.19}]}
@@ -89,6 +91,3 @@ execute as @a at @s anchored eyes run function maze:monsters/playerlooks
 #execute as @e[type=item,nbt={Item:{id:"minecraft:torch",tag:{altercate:2b}}}] run kill @s
 #execute as @e[type=item,nbt={Item:{id:"minecraft:torch"}},tag=!dead] at @s run function maze:monsters/restricttorch
 #execute as @e[type=item,nbt={Item:{id:"minecraft:torch"}},tag=!dead] run tag @s add dead
-
-execute as @a[scores={dead=1..}] run scoreboard players remove @s lives 1
-execute as @a[scores={dead=1..}] run scoreboard players remove @s dead 1

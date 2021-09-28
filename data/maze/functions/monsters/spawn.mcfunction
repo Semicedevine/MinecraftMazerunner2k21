@@ -7,7 +7,7 @@ summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.mo
 #summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.11}]}
 #scale set pehkui:base 2 @e[type=undergarden:nargoyle,tag=mazeMob]
 
-summon undergarden:rotwalker ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.3}]}
+summon undergarden:rotwalker ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.23}]}
 #summon undergarden:rotwalker ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.3}]}
 scale set pehkui:base 1.5 @e[type=undergarden:rotwalker,tag=mazeMob]
 
