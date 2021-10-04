@@ -2,7 +2,7 @@ summon geode:coalgeode ~ ~ ~ {Tags:["mazeMob","statue"],Silent:true,Attributes:[
 summon geode:redstonegeode ~ ~ ~ {Tags:["mazeMob","statue"],Silent:true,Attributes:[{Base: 0.4d, Name: "minecraft:generic.movement_speed"},{Name:generic.follow_range,Base:40},{Name:generic.attack_damage,Base:4}]}
 #summon geode:emeraldgeode ~ ~ ~ {Tags:["mazeMob","statue"],Silent:true,Attributes:[{Base: 0.4d, Name: "minecraft:generic.movement_speed"},{Name:generic.follow_range,Base:40},{Name:generic.attack_damage,Base:4}]}
 
-summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.11}]}
+summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.06}]}
 #summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.11}]}
 #summon undergarden:nargoyle ~ ~ ~ {Tags:["mazeMob"],Attributes:[{Name:generic.movement_speed,Base:0.11}]}
 #scale set pehkui:base 2 @e[type=undergarden:nargoyle,tag=mazeMob]
