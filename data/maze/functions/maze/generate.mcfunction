@@ -19,13 +19,13 @@ scoreboard players operation #random maze = @e[type=armor_stand,name=random,scor
 execute if score #random maze matches 1.. run setblock ~ ~ ~ red_wool
 
 #Carve out maze in chosen direction (if one is chosen)
-execute if score #random maze matches 1 run fill ~2 ~2 ~1 ~1 ~13 ~-1 air
+execute if score #random maze matches 1 run fill ~2 ~2 ~1 ~2 ~13 ~-1 air
 execute if score #random maze matches 1 positioned ~4 ~ ~ run function maze:maze/generate
-execute if score #random maze matches 2 run fill ~-2 ~2 ~-1 ~-1 ~13 ~1 air
+execute if score #random maze matches 2 run fill ~-2 ~2 ~-1 ~-2 ~13 ~1 air
 execute if score #random maze matches 2 positioned ~-4 ~ ~ run function maze:maze/generate
-execute if score #random maze matches 3 run fill ~-1 ~2 ~2 ~1 ~13 ~1 air
+execute if score #random maze matches 3 run fill ~-1 ~2 ~2 ~1 ~13 ~2 air
 execute if score #random maze matches 3 positioned ~ ~ ~4 run function maze:maze/generate
-execute if score #random maze matches 4 run fill ~-1 ~2 ~-2 ~1 ~13 ~-1 air
+execute if score #random maze matches 4 run fill ~-1 ~2 ~-2 ~1 ~13 ~-2 air
 execute if score #random maze matches 4 positioned ~ ~ ~-4 run function maze:maze/generate
 
 execute if score #random maze matches 0 if block ~ ~ ~ stone_bricks run function maze:maze/divert
