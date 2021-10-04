@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=play] at @s positioned ~ ~-2 ~ run function maze:game/create
