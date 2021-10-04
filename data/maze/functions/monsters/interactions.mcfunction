@@ -19,11 +19,11 @@ execute as @e[type=undergarden:nargoyle,tag=mazeMob] if score @s maze >= 20 cons
 execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playernotsprinting run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:20}]}
 execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playerbadomen run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:20}]}
 execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:12}]}
-execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:4}]}
+execute as @e[type=undergarden:rotwalker,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:0}]}
 
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playernotsprinting run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:6}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playernotsprinting run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:10}]}
-execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:4}]}
+#execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:playerbadomen if predicate maze:playersneaking run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:4}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] if predicate maze:player run data merge entity @s {Attributes:[{Name:generic.follow_range,Base:10}]}
 execute as @e[type=undergarden:rotbeast,tag=mazeMob] if predicate maze:player run scoreboard players add @s maze 1
 #execute as @e[type=undergarden:rotbeast,tag=mazeMob] unless predicate maze:player run scoreboard players set @s maze 0
