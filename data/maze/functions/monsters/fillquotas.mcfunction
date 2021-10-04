@@ -9,5 +9,5 @@ execute if score #b maze < #eyes maze run summon eyesinthedarkness:eyes ~ ~255 ~
 execute as @e[tag=init] run function maze:monsters/spreadmonster
 tag @e[tag=init] remove init
 
-execute store result score #a maze if entity @e[type=item,tag=food]
-execute if score #a maze < #food maze run function maze:monsters/spawnfood
+#execute store result score #a maze if entity @e[type=item,tag=food]
+#execute if score #a maze < #food maze run function maze:monsters/spawnfood
